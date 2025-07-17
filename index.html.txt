@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Loja Online</h1>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <div class="produto">
+        <h2>Produto 1</h2>
+        <p>R$ 49,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 49.90)">Comprar</button>
+      </div>
+      <div class="produto">
+        <h2>Produto 2</h2>
+        <p>R$ 89,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 2', 89.90)">Comprar</button>
+      </div>
+    </section>
+
+    <section class="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="itens-carrinho"></ul>
+      <p>Total: R$ <span id="total">0.00</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
